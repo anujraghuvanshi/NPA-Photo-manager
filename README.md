@@ -1,4 +1,4 @@
-#  APA-Photo-manager-
+#  APA-Photo-manager
 Provides feature to share Event photos to Number of users.
 
 ###  Way of Installation
