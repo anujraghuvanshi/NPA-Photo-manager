@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="utf-8">
@@ -64,8 +64,25 @@
             @yield('content')
         </main>
     </div>
-
-    <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+</body>
+</html>
+ --}}
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhotoShow</title>
+    <link rel="stylesheet" href="/bootstrap/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        @include('inc.topbar')
+        <div class="row">
+        @include('inc.messages')
+            @yield('content')
+        </div>
+    </div>
 </body>
 </html>
