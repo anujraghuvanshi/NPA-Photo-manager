@@ -8,6 +8,7 @@
                     <li><a href="{{route('login')}}">Login</a></li>
                     <li><a href="{{route('register')}}">Signup</a></li>
                     @else
+                    <li><a href="{{route('albums.index')}}">Albums</a></li>
                     <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">Logout</a>
                     </li>
@@ -18,5 +19,5 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div>x
 </div>

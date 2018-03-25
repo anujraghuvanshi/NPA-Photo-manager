@@ -1,12 +1,10 @@
 <div class="container background-white">
     <div class="row margin-vert-30">
         <div class="col-md-12">
-            <h2 class="text-center">Welcome to LifeStyle</h2>
+            <h2 class="text-center">Welcome to APA Photo Manager</h2><br>
             <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                <p class="text-center">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-                    augue duis dolore te feugait nulla facilisi. Cras non sem sem, at eleifend mi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Curabitur eget nisl
-                    a risus.
+                lobortis nisl ut aliquip ex ea commodo consequat.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+                    augue duis dolore te feugait nulla facilisi. Cras non sem sem, at eleifend mi.               a risus.
                 </p>
             </div>
         </div>
@@ -20,10 +18,10 @@
                     <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
                         <a href="#">
                             <figure class="animate fadeInLeft">
-                                <img alt="image1" src="{{ asset('img/frontpage/image1.jpg') }}">
+                                <img alt="image" src="{{ asset('img/frontpage/image1.jpg') }}">
                                 <figcaption>
-                                    <h3>Placerat facer possim</h3>
-                                    <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                                    <h3>Amritsar Trip</h3>
+                                    <span>Go To Amritsar With Office Staff.</span>
                                 </figcaption>
                             </figure>
                         </a>
@@ -31,10 +29,10 @@
                     <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
                         <a href="#">
                             <figure class="animate fadeInRight">
-                                <img alt="image2" src="{{ asset('img/frontpage/image2.jpg') }}">
+                                <img alt="image" src="{{ asset('img/frontpage/image2.jpg') }}">
                                 <figcaption>
-                                    <h3>Placerat facer possim</h3>
-                                    <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                                    <h3>Movie Time</h3>
+                                    <span>Go To Watching Movie With Three Bestee.</span>
                                 </figcaption>
                             </figure>
                         </a>
@@ -42,10 +40,10 @@
                     <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
                         <a href="#">
                             <figure class="animate fadeInLeft">
-                                <img alt="image3" src="{{ asset('img/frontpage/image3.jpg') }}">
+                                <img alt="image" src="{{ asset('img/frontpage/image3.jpg') }}">
                                 <figcaption>
-                                    <h3>Placerat facer possim</h3>
-                                    <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                                    <h3>Sport Meet</h3>
+                                    <span>Go To Sport Meet in University.</span>
                                 </figcaption>
                             </figure>
                         </a>
@@ -53,10 +51,10 @@
                     <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
                         <a href="#">
                             <figure class="animate fadeInRight">
-                                <img alt="image4" src="{{ asset('img/frontpage/image4.jpg') }}">
+                                <img alt="image" src="{{ asset('img/frontpage/image4.jpg') }}">
                                 <figcaption>
-                                    <h3>Placerat facer possim</h3>
-                                    <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                                    <h3>Birthday Celebration</h3>
+                                    <span>Celebrating Friend's Birthday.</span>
                                 </figcaption>
                             </figure>
                         </a>
@@ -64,10 +62,10 @@
                     <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
                         <a href="#">
                             <figure class="animate fadeInLeft">
-                                <img alt="image5" src="{{ asset('img/frontpage/image5.jpg') }}">
+                                <img alt="image" src="{{ asset('img/frontpage/image5.jpg') }}">
                                 <figcaption>
-                                    <h3>Placerat facer possim</h3>
-                                    <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                                    <h3>Nakodar Trip</h3>
+                                    <span>Fully Enjoy With Besties</span>
                                 </figcaption>
                             </figure>
                         </a>
@@ -75,10 +73,10 @@
                     <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
                         <a href="#">
                             <figure class="animate fadeInRight">
-                                <img alt="image6" src="{{ asset('img/frontpage/image6.jpg') }}">
+                                <img alt="image" src="{{ asset('img/frontpage/image6.jpg') }}">
                                 <figcaption>
-                                    <h3>Placerat facer possim</h3>
-                                    <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
+                                    <h3>Amritsar Trip</h3>
+                                    <span>Unforgettable Memory</span>
                                 </figcaption>
                             </figure>
                         </a>

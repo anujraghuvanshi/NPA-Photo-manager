@@ -10,11 +10,21 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', function () {
-    return view('admin.index');
+	return view('admin.index');
 });
 
 Auth::routes();
+Route::group(['prefix' => 'albums'], function(){
+	Route::get('/',['as' => 'albums.index', 'uses' => 'AlbumsController@index']);
+	Route::get('/create',['as' => 'albums.create', 'uses' => 'AlbumsController@create']);
+	Route::post('/store',['as' => 'albums.store', 'uses' => 'AlbumsController@store']);
+	Route::get('/show/{id}',['as' => 'albums.view', 'uses' => 'AlbumsController@show']);
+});
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/photos/create/{id}', 'PhotosController@create');
+Route::post('/photos/store', 'PhotosController@store');
+Route::get('/photos/{id}', 'PhotosController@show');
+Route::delete('/photos/{id}', 'PhotosController@destroy');
