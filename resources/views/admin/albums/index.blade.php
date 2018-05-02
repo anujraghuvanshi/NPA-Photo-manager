@@ -19,8 +19,8 @@
 		<div class="row padding-vert-20">
 
 			<h3><b><a href="{{route('albums.create')}}" class="btn  pull-right">Create Album</b></a></h3>
-			<h2><i><u>{{ \Auth::user()->name }}</u></i></h2><br>
-			<h3>Albums: </h3>
+			<h2><i>Hii {{ \Auth::user()->name }}</u></h2><br>
+			<h3>Your Albums Here: </h3>
 			<div class="col-md-1"></div>
 
 				@if(count($albums) > 0)
@@ -35,7 +35,6 @@
 								<figcaption class="responsive" >
 									<h3>{{ $album->name }}</h3>
 									<span>{{ $album->description }}</span><br><br>
-									<span>{{ $album->user_id }}</span>
 									<div class="btn-group">
 										<button type="button"  class="btn btn-md btn-info">Read More</button>
 										<button type="button" class="btn btn-md btn-success">Update Album</button>

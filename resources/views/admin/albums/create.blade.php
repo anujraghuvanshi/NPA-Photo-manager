@@ -15,26 +15,26 @@
 <div id="content">
 <div class="container background-white">
         <div class="row margin-vert-30">
-            <div class="col-md-12">
+            <div class="col-md-6 col-md-offset-3">
                 <div class="headline">
                     <h2>Create album</h2></center>
                 </div>
                 {!! Form::open(['route' => 'albums.store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                     <label>Title</label>
                     <div class="row margin-bottom-20">
-                        <div class="col-md-6 col-md-offset-0">
+                        <div class="col-md-offset-0">
                             {{ Form::text('name', '', ['placeholder' => 'Album Name', 'class' => 'form-control']) }}
                         </div>
                     </div>
                     <label>Description</label>
                     <div class="row margin-bottom-20">
-                        <div class="col-md-6 col-md-offset-0">
+                        <div class="col-md-offset-0">
                             {{ Form::textarea('description', '', ['placeholder' => 'Album Descrption', 'class' => 'form-control']) }}
                         </div>
                     </div>
                     <label>Cover Picture</label>
                     <div class="row margin-bottom-20">
-                        <div class="col-md-6 col-md-offset-0">
+                        <div class="col-md-offset-0">
                             {{ Form::file('cover_image') }}
                         </div>
                     </div>

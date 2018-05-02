@@ -14,8 +14,7 @@
 <div id="content">
     <div class="container background-white">
         <div class="row margin-vert-30">
-            <div class="col-md-4"></div>
-            <div class="col-md-8">
+            <div class="col-md-6 col-md-offset-3">
                 <div class="headline">
                     <h2>Login Form</h2>
                 </div>
@@ -23,7 +22,7 @@
                     @csrf
                     <label>Email</label>
                     <div class="row margin-bottom-20">
-                        <div class="col-md-6 col-md-offset-0">
+                        <div class="col-md-offset-0">
                             <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
                         </div>
                         @if ($errors->has('email'))
@@ -34,7 +33,7 @@
                     </div>
                     <label>Password</label>
                     <div class="row margin-bottom-20">
-                        <div class="col-md-6 col-md-offset-0">
+                        <div class="col-md-offset-0">
                             <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
                         </div>
 
@@ -45,7 +44,7 @@
                         @endif
                     </div>
                     <div class="row margin-bottom-20">
-                        <div class="col-md-6 col-md-offset-0">
+                        <div class="col-md-offset-0">
                             <div class="checkbox">
                                 <label>
                                     <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me

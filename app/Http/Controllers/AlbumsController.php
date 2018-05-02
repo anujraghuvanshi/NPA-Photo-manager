@@ -8,7 +8,9 @@ use App\Album;
 class AlbumsController extends Controller
 {
      public function index(){
-        $albums = Album::with('photos')->get();
+        $user_id = \Auth::user()->id;
+        $albums = Album::with('photos')->where('user_id', $user_id)
+                                        ->get();
     	return view('admin.albums.index')->with('albums', $albums);
     }
 
