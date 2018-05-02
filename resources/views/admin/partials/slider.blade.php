@@ -22,10 +22,12 @@
                 </div>
             </div>
             <a class="left carousel-control" href="#carousel-example" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
+                {{-- <span class="glyphicon glyphicon-chevron-left"></span> --}}
+                <span class="carousel-slider-btn"> < </span>
             </a>
             <a class="right carousel-control" href="#carousel-example" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
+                {{-- <span class="glyphicon glyphicon-chevron-right"></span> --}}
+                <span class="carousel-slider-btn"> > </span>
             </a>
         </div>
     </div>

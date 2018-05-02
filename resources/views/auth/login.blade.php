@@ -14,7 +14,8 @@
 <div id="content">
     <div class="container background-white">
         <div class="row margin-vert-30">
-            <div class="col-md-12">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
                 <div class="headline">
                     <h2>Login Form</h2>
                 </div>

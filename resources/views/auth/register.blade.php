@@ -14,7 +14,8 @@
 <div id="content">
     <div class="container background-white">
         <div class="row margin-vert-30">
-            <div class="col-md-12">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
                 <div class="headline">
                     <h2>Register Form</h2></center>
                 </div>
@@ -63,7 +64,7 @@
                         </div>
                     </div>
                     <div class="form-group row mb-0">
-                        <div class="col-md-8 offset-md-4">
+                        <div class="col-md-8 offset-md-4  pull-right">
                             <button type="submit" class="btn btn-primary">
                                 Register
                             </button>

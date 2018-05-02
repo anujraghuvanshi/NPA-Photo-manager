@@ -19,5 +19,5 @@
                 </ul>
             </div>
         </div>
-    </div>x
+    </div>
 </div>
