@@ -29,7 +29,7 @@
 				<ul class="portfolio-group jumbotron">
 					@foreach($albums as $album)
 					<li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-						<a href="">
+						<a href="/albums/show/{{ $album->id }}"">
 							<figure class="animate fadeInLeft">
 								<img class="img-responsive" alt="image" src="{{ asset('storage/album_covers')}}/{{ $album->cover_image }}" height="300" width="500">
 								<figcaption class="responsive" >
