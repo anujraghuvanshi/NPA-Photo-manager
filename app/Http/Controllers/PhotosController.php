@@ -9,7 +9,7 @@ use App\Photo;
 class PhotosController extends Controller
 {
     public function create($album_id) {
-    	return view('photos.create')->with('album_id', $album_id);
+    	return view('admin.photos.create')->with('album_id', $album_id);
     }
 
     public function store(Request $request) {
@@ -42,7 +42,7 @@ class PhotosController extends Controller
 
     public function show($id) {
         $photo = Photo::find($id);
-        return view('photos.show')->with('photo', $photo); 
+        return view('admin.photos.show')->with('photo', $photo); 
     }
 
     public function destroy($id) {

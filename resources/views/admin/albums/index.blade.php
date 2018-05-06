@@ -14,13 +14,16 @@
 <div id="content-top-border" class="container"></div>
 <div id="content">
 
-
 	<div class="container background-gray-lighter">
 		<div class="row padding-vert-20">
+			<div class="headline">
+				<center>
+					<h3> {{ \Auth::user()->name }}'s Albums Here </h3><br>
+				</center>
+			</div>
+			<hr>
+			<a href="{{route('albums.create')}}" class="btn  pull-right">Create Album</a>
 
-			<h3><b><a href="{{route('albums.create')}}" class="btn  pull-right">Create Album</b></a></h3>
-			<h2><i>Hii {{ \Auth::user()->name }}</u></h2><br>
-			<h3>Your Albums Here: </h3>
 			<div class="col-md-1"></div>
 
 				@if(count($albums) > 0)
@@ -29,16 +32,12 @@
 				<ul class="portfolio-group jumbotron">
 					@foreach($albums as $album)
 					<li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-						<a href="/albums/show/{{ $album->id }}"">
+						<a href="/albums/show/{{ $album->id }}">
 							<figure class="animate fadeInLeft">
-								<img class="img-responsive" alt="image" src="{{ asset('storage/album_covers')}}/{{ $album->cover_image }}" height="300" width="500">
+								<img class="img-responsive thumbnail-image" alt="image" src="{{ asset('storage/album_covers')}}/{{ $album->cover_image }}" height="300" width="500">
 								<figcaption class="responsive" >
 									<h3>{{ $album->name }}</h3>
 									<span>{{ $album->description }}</span><br><br>
-									<div class="btn-group">
-										<button type="button"  class="btn btn-md btn-info">Read More</button>
-										<button type="button" class="btn btn-md btn-success">Update Album</button>
-									</div>
 								</figcaption>
 							</figure>
 						</a>

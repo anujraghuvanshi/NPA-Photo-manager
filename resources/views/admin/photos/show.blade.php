@@ -1,25 +1,38 @@
-@extends('layouts.app')
+@extends('admin.layouts.master')
 
 @section('content')
-	
-	<div class="row">
-		<h3>{{ $photo->title }}</h3>
-		<p>{{ $photo->description }}</p>
-		<a href="/albums/show/{{ $photo->album_id }}" class="btn btn-default"> Back to gallery</a>
-		<hr>
-		<img src="/storage/photos/{{ $photo->album_id }}/{{ $photo->photo }}" alt="photo" height="400px" >
 
-		<br>
-		<br>
+@include('admin.partials.social-links')
 
-		{!! Form::open(['action' => ['PhotosController@destroy', $photo->id], 'method' => 'POST']) !!}
+<div id="pre-header" class="container" style="height:20px"></div>
 
-		{{ Form::hidden('_method', 'delete') }}
-		{{ Form::submit('delete Photo', ['class' => 'btn btn-danger']) }}  <small>{{ $photo->size }} bytes</small>
+@include('admin.partials.header')
 
-		{!! Form::close() !!}
+@include('admin.partials.nav-bar')
 
-		<hr>
+<div id="post_header" class="container" style="height:10px"></div>
+<div id="content-top-border" class="container"></div>
+<div id="content">
+	<div class="container background-gray-lighter">
+		<div class="row padding-vert-20">
+			<div class="row margin-vert-30">
+				<div class="col-md-10">
+					<h2 class="text-center">{{ $photo->title }}</h2><hr>
+					<p class="text-center">{{ $photo->description }}</p>
+					{!! Form::open(['action' => ['PhotosController@destroy', $photo->id], 'method' => 'POST']) !!}
 
+					{{ Form::hidden('_method', 'delete') }}
+					{{ Form::submit('delete Photo', ['class' => 'btn btn-danger pull-right']) }}
+
+					{!! Form::close() !!}
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<div id="content-bottom-border" class="container"></div>
+
+	@include('admin.partials.footer') 
+
+</div>
 @endsection
