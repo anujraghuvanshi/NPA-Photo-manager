@@ -20,7 +20,9 @@
                             <figure class="animate fadeInLeft">
                                 <img alt="image" src="{{ asset('img/frontpage/image1.jpg') }}">
                                 <figcaption>
+                                <center>
                                     <h3>Amritsar Trip</h3>
+                                </center>
                                     <span>Go To Amritsar With Office Staff.</span>
                                 </figcaption>
                             </figure>
@@ -31,7 +33,9 @@
                             <figure class="animate fadeInRight">
                                 <img alt="image" src="{{ asset('img/frontpage/image2.jpg') }}">
                                 <figcaption>
+                                <center>
                                     <h3>Movie Time</h3>
+                                </center>
                                     <span>Go To Watching Movie With Three Bestee.</span>
                                 </figcaption>
                             </figure>
@@ -42,7 +46,9 @@
                             <figure class="animate fadeInLeft">
                                 <img alt="image" src="{{ asset('img/frontpage/image3.jpg') }}">
                                 <figcaption>
+                                <center>
                                     <h3>Sport Meet</h3>
+                                </center>
                                     <span>Go To Sport Meet in University.</span>
                                 </figcaption>
                             </figure>
@@ -53,7 +59,9 @@
                             <figure class="animate fadeInRight">
                                 <img alt="image" src="{{ asset('img/frontpage/image4.jpg') }}">
                                 <figcaption>
+                                <center>
                                     <h3>Birthday Celebration</h3>
+                                </center>
                                     <span>Celebrating Friend's Birthday.</span>
                                 </figcaption>
                             </figure>
@@ -64,7 +72,9 @@
                             <figure class="animate fadeInLeft">
                                 <img alt="image" src="{{ asset('img/frontpage/image5.jpg') }}">
                                 <figcaption>
+                                <center>
                                     <h3>Nakodar Trip</h3>
+                                </center>
                                     <span>Fully Enjoy With Besties</span>
                                 </figcaption>
                             </figure>
@@ -75,7 +85,9 @@
                             <figure class="animate fadeInRight">
                                 <img alt="image" src="{{ asset('img/frontpage/image6.jpg') }}">
                                 <figcaption>
+                                <center>
                                     <h3>Amritsar Trip</h3>
+                                </center>
                                     <span>Unforgettable Memory</span>
                                 </figcaption>
                             </figure>

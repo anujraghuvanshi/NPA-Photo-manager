@@ -21,7 +21,7 @@
 				</center>
 			</div>
 			<hr>
-			<a href="/" class="btn pull-left" role="button">Go back</a>
+			<a href="/albums" class="btn pull-left" role="button"> < Go back</a>
 			<a href="/photos/create/{{ $album->id }}" class="pull-right" role="button">Add Photos in Albums</a>
 
 			<div class="col-md-1"></div>
@@ -37,7 +37,9 @@
 								<img class="img-responsive thumbnail-image" alt="{{ $photo->title }}" src="/storage/photos/{{ $photo->album_id }}/{{ $photo->photo }}">
 
 								<figcaption class="responsive">
-									<h3>{{ $photo->title }}</h3>
+									<center>
+										<h3>{{ $photo->title }}</h3>
+									</center>
 									<span>{{ $photo->description }}</span>
 								</figcaption>
 							</figure>
@@ -60,8 +62,6 @@
 	</div>
 	
 	<div id="content-bottom-border" class="container"></div>
-
-	@include('admin.partials.footer') 
 
 </div>
 @endsection

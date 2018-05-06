@@ -15,24 +15,36 @@
 <div id="content">
 	<div class="container background-gray-lighter">
 		<div class="row padding-vert-20">
+			<a href="/albums" class="btn pull-left position-absolute" role="button"> < Go back</a>
 			<div class="row margin-vert-30">
-				<div class="col-md-10">
-					<h2 class="text-center">{{ $photo->title }}</h2><hr>
-					<p class="text-center">{{ $photo->description }}</p>
-					{!! Form::open(['action' => ['PhotosController@destroy', $photo->id], 'method' => 'POST']) !!}
+				<div class="col-md-6 col-md-offset-3">
 
-					{{ Form::hidden('_method', 'delete') }}
-					{{ Form::submit('delete Photo', ['class' => 'btn btn-danger pull-right']) }}
+					<div class="portfolio-group">
+						<figure class="animate fadeInLeft">
+							<img class="img-responsive thumbnail-image" alt="{{ $photo->title }}" src="/storage/photos/{{ $photo->album_id }}/{{ $photo->photo }}">
 
-					{!! Form::close() !!}
+							<figcaption class="responsive">
+								<center>
+									<h3>{{ $photo->title }}</h3>
+								</center>
+								<span>{{ $photo->description }}</span>
+							</figcaption>
+						</figure>
+						{!! Form::open(['action' => ['PhotosController@destroy', $photo->id], 'method' => 'POST']) !!}
+
+						{{ Form::hidden('_method', 'delete') }}
+						{{ Form::submit('delete Photo', ['class' => 'btn btn-danger pull-right']) }}
+
+						{!! Form::close() !!}
+						
+					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div id="content-bottom-border" class="container"></div>
-
-	@include('admin.partials.footer') 
 
 </div>
 @endsection

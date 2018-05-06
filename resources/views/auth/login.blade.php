@@ -69,7 +69,6 @@
     </div>
     <div id="content-bottom-border" class="container"></div>
 
-    @include('admin.partials.footer') 
 </div>
 
 @endsection
