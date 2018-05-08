@@ -2,37 +2,36 @@
 
 @section('content')
 
-@include('admin.partials.social-links')
-
-<div id="pre-header" class="container" style="height:20px"></div>
-
-@include('admin.partials.header')
-
-@include('admin.partials.nav-bar')
-
-<div id="post_header" class="container" style="height:10px"></div>
-<div id="content-top-border" class="container"></div>
 <div id="content">
 	<div class="container background-gray-lighter">
 		<div class="row padding-vert-20">
-			<div class="row margin-vert-30">
-				<div class="col-md-10">
-					<h2 class="text-center">{{ $photo->title }}</h2><hr>
-					<p class="text-center">{{ $photo->description }}</p>
-					{!! Form::open(['action' => ['PhotosController@destroy', $photo->id], 'method' => 'POST']) !!}
+			<div class="headline">
+				<center>
+					<h2> {{ $photo->title }} </h2>
+				</center>
+			</div><hr>
+			<div class="col-md-1"></div>
+			<div class="row">
+				<div class="col-md-5">
+					<figure class="animate fadeInLeft">
+						<img class="img-responsive thumbnail-image" alt="{{ $photo->title }}" src="{{asset('storage/photos')}}/{{ $photo->album_id }}/{{ $photo->photo }}">
+					</figure>
+				</div>
+				<div class="col-md-5">
+					<figcaption class="responsive">
+					<i><h3>Descriptions:</h3></i>
+					<i>***************************************</i>
+					<h5>{{ $photo->description }}</h5>
+					</figcaption>
+					<i>------------------------------------------------------------</i>
+					{!! Form::open(['route' => ['photos.delete', $photo->id], 'method' => 'DELETE']) !!}
 
 					{{ Form::hidden('_method', 'delete') }}
-					{{ Form::submit('delete Photo', ['class' => 'btn btn-danger pull-right']) }}
-
-					{!! Form::close() !!}
+					{{ Form::submit('Delete Photo', ['class' => 'btn btn-danger']) }}
+					{!! Form::close() !!}					
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div id="content-bottom-border" class="container"></div>
-
-	@include('admin.partials.footer') 
-
 </div>
 @endsection

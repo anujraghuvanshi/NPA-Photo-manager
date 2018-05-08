@@ -53,6 +53,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover !important;
   position: relative;
+  height:100vh;
 }
 .primary-container-background .primary-container {
   width: 1080px;

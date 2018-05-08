@@ -2,16 +2,6 @@
 
 @section('content')
 
-@include('admin.partials.social-links')
-
-<div id="pre-header" class="container" style="height:20px"></div>
-
-@include('admin.partials.header')
-
-@include('admin.partials.nav-bar')
-
-<div id="post_header" class="container" style="height:10px"></div>
-<div id="content-top-border" class="container"></div>
 <div id="content">
 	<div class="container background-gray-lighter">
 		<div class="row padding-vert-20">
@@ -22,7 +12,7 @@
 			</div>
 			<hr>
 			<a href="/" class="btn pull-left" role="button">Go back</a>
-			<a href="/photos/create/{{ $album->id }}" class="pull-right" role="button">Add Photos in Albums</a>
+			<a href="{{url('photos/create')}}/{{ $album->id }}" class="pull-right" role="button">Add Photos in Albums</a>
 
 			<div class="col-md-1"></div>
 
@@ -32,9 +22,9 @@
 				<ul class="portfolio-group">
 					@foreach($album->photos as $photo)
 					<li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-						<a href="/photos/{{ $photo->id }}">
+						<a href="{{url('photos')}}/{{ $photo->id }}">
 							<figure class="animate fadeInLeft">
-								<img class="img-responsive thumbnail-image" alt="{{ $photo->title }}" src="/storage/photos/{{ $photo->album_id }}/{{ $photo->photo }}">
+								<img class="img-responsive thumbnail-image" alt="{{ $photo->title }}" src="{{asset('storage/photos')}}/{{ $photo->album_id }}/{{ $photo->photo }}">
 
 								<figcaption class="responsive">
 									<h3>{{ $photo->title }}</h3>
@@ -58,10 +48,5 @@
 			@endif
 		</div>
 	</div>
-	
-	<div id="content-bottom-border" class="container"></div>
-
-	@include('admin.partials.footer') 
-
 </div>
 @endsection

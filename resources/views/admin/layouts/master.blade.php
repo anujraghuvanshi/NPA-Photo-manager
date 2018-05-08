@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
     <head>
         <title>APA Photo Manager</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -19,7 +19,20 @@
     </head>
     <body>
     <div id="body-bg">
-    	@yield('content')
+        @include('admin.partials.social-links')
+
+        <div id="pre-header" class="container" style="height:20px"></div>
+
+        @include('admin.partials.header')
+        @include('admin.partials.nav-bar')
+
+        <div id="post_header" class="container" style="height:10px"></div>
+        <div id="content-top-border" class="container"></div>
+
+        @yield('content')
+        
+        <div id="content-bottom-border" class="container"></div>
+
     </div>
     <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}" type="text/javascript"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}" type="text/javascript"></script>
