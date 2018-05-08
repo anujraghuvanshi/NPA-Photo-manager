@@ -27,7 +27,9 @@
 								<img class="img-responsive thumbnail-image" alt="{{ $photo->title }}" src="{{asset('storage/photos')}}/{{ $photo->album_id }}/{{ $photo->photo }}">
 
 								<figcaption class="responsive">
-									<h3>{{ $photo->title }}</h3>
+									<center>
+										<h3>{{ $photo->title }}</h3>
+									</center>
 									<span>{{ $photo->description }}</span>
 								</figcaption>
 							</figure>

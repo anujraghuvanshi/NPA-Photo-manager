@@ -6,3 +6,6 @@
 .thumbnail-image{
 	height: 370px;
 }
+.position-absolute {
+	position: absolute;
+}

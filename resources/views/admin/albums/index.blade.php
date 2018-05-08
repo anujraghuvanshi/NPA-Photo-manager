@@ -25,8 +25,10 @@
 							<figure class="animate fadeInLeft">
 								<img class="img-responsive thumbnail-image" alt="image" src="{{ asset('storage/album_covers')}}/{{ $album->cover_image }}" height="300" width="500">
 								<figcaption class="responsive" >
-									<h3>{{ $album->name }}</h3>
-									<span>{{ $album->description }}</span><br><br>
+									<center>
+										<h3>{{ $album->name }}</h3>
+									</center>
+									<span> {{ $album->description }}</span><br><br>
 								</figcaption>
 							</figure>
 						</a>
