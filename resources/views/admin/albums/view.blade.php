@@ -11,7 +11,7 @@
 				</center>
 			</div>
 			<hr>
-			<a href="/" class="btn pull-left" role="button">Go back</a>
+			<a href="/albums" class="btn pull-left" role="button">Go back</a>
 			<a href="{{url('photos/create')}}/{{ $album->id }}" class="pull-right" role="button">Add Photos in Albums</a>
 
 			<div class="col-md-1"></div>
@@ -25,6 +25,12 @@
 						<a href="{{url('photos')}}/{{ $photo->id }}">
 							<figure class="animate fadeInLeft">
 								<img class="img-responsive thumbnail-image" alt="{{ $photo->title }}" src="{{asset('storage/photos')}}/{{ $photo->album_id }}/{{ $photo->photo }}">
+								<a  class="share-to-facebook-btn" target="_" href="https://www.facebook.com/sharer/sharer.php?u={{asset('storage/photos')}}/{{ $photo->album_id }}/{{ $photo->photo }}">Share to Facebook
+								</a>
+
+								@if (\Auth::user()->role == 'admin')
+									<button>Share to users</button>
+								@endif
 
 								<figcaption class="responsive">
 									<center>

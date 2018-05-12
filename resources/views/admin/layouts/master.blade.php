@@ -16,6 +16,13 @@
         <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=PT+Sans" type="text/css" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
+
+        <meta property="og:url"           content="{{ env('APP_URL') }}/infographic_share" />
+        <meta property="og:type"          content="apa" />
+        <meta property="og:title"         content="apa" />
+        <meta property="og:description"   content="APA Photo Manager" />
+        <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+
     </head>
     <body>
     <div id="body-bg">

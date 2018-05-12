@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Repositories\AlbumRepository;
 
 class RegisterController extends Controller
 {
@@ -35,9 +36,10 @@ class RegisterController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(AlbumRepository $repository)
     {
         $this->middleware('guest');
+        $this->repository = $repository;
     }
 
     /**
@@ -62,11 +64,15 @@ class RegisterController extends Controller
      * @return \App\User
      */
     protected function create(array $data)
-    {
-        return User::create([
+    {   
+        
+        $user =  User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'role' =>  empty($data['role']) ? 'user' : $data['role'],
         ]);
+        $this->repository->createSharedByAdminAlbum($user);
+        return $user;
     }
 }

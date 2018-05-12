@@ -9,3 +9,12 @@
 .position-absolute {
 	position: absolute;
 }
+.share-to-facebook-btn {
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	color: blue;
+}
+.share-to-facebook-btn:hover {
+	color: blue;
+}

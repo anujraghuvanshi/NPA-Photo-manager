@@ -44,6 +44,7 @@ body {
   color: #656565;
 }
 #body-bg {
+  height: 768px;
   background-attachment: fixed;
   background-clip: border-box;
   background-color: rgba(0, 0, 0, 0);
