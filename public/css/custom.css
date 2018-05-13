@@ -4,17 +4,17 @@
 }
 
 .thumbnail-image{
-	height: 370px;
+	height: 270px;
 }
 .position-absolute {
 	position: absolute;
 }
-.share-to-facebook-btn {
-	position: absolute;
-	right: 10px;
-	top: 20px;
-	color: blue;
+.portfolio-item{
+	width: 350px;
 }
-.share-to-facebook-btn:hover {
-	color: blue;
+.figcaption{
+	height: 100px !important;
+}
+.add-album{
+	margin: 120px 20px;
 }

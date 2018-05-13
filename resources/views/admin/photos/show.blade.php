@@ -13,21 +13,26 @@
 			<div class="col-md-1"></div>
 			<div class="row">
 				<div class="col-md-5">
-					<figure class="animate fadeInLeft">
-						<img class="img-responsive thumbnail-image" alt="{{ $photo->title }}" src="{{asset('storage/photos')}}/{{ $photo->album_id }}/{{ $photo->photo }}">
+					<figure>
+						<img class="img-responsive thumbnail-image" alt="{{ $photo->title }}" src="{{asset('storage/photos')}}/{{ $photo->album_id }}/{{ $photo->photo }}" height="300" width="500">
 					</figure>
 				</div>
 				<div class="col-md-5">
 					<figcaption class="responsive">
 					<i><h3>Descriptions:</h3></i>
 					<i>***************************************</i>
-					<h5>{{ $photo->description }}</h5>
+					@if(!$photo->description)
+						<h5><i>No Description</i></h5>
+					@else
+						<h5>{{ $photo->description }}</h5>
+					@endif
 					</figcaption>
 					<i>------------------------------------------------------------</i>
 					{!! Form::open(['route' => ['photos.delete', $photo->id], 'method' => 'DELETE']) !!}
 
 					{{ Form::hidden('_method', 'delete') }}
 					{{ Form::submit('Delete Photo', ['class' => 'btn btn-danger']) }}
+					<a href="{{ URL::previous() }}" class="btn btn-info">Go To Photos</a>
 					{!! Form::close() !!}					
 
 				</div>

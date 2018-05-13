@@ -18,7 +18,7 @@
                     <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
                         <a href="#">
                             <figure class="animate fadeInLeft">
-                                <img alt="image" src="{{ asset('img/frontpage/image1.jpg') }}">
+                                <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image1.jpg') }}">
                                 <figcaption>
                                 <center>
                                     <h3>Amritsar Trip</h3>
@@ -31,7 +31,7 @@
                     <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
                         <a href="#">
                             <figure class="animate fadeInRight">
-                                <img alt="image" src="{{ asset('img/frontpage/image2.jpg') }}">
+                                <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image2.jpg') }}">
                                 <figcaption>
                                 <center>
                                     <h3>Movie Time</h3>
@@ -44,7 +44,7 @@
                     <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
                         <a href="#">
                             <figure class="animate fadeInLeft">
-                                <img alt="image" src="{{ asset('img/frontpage/image3.jpg') }}">
+                                <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image3.jpg') }}">
                                 <figcaption>
                                 <center>
                                     <h3>Sport Meet</h3>
@@ -57,7 +57,7 @@
                     <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
                         <a href="#">
                             <figure class="animate fadeInRight">
-                                <img alt="image" src="{{ asset('img/frontpage/image4.jpg') }}">
+                                <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image4.jpg') }}">
                                 <figcaption>
                                 <center>
                                     <h3>Birthday Celebration</h3>
@@ -70,7 +70,7 @@
                     <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
                         <a href="#">
                             <figure class="animate fadeInLeft">
-                                <img alt="image" src="{{ asset('img/frontpage/image5.jpg') }}">
+                                <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image5.jpg') }}">
                                 <figcaption>
                                 <center>
                                     <h3>Nakodar Trip</h3>
@@ -83,7 +83,7 @@
                     <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
                         <a href="#">
                             <figure class="animate fadeInRight">
-                                <img alt="image" src="{{ asset('img/frontpage/image6.jpg') }}">
+                                <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image6.jpg') }}">
                                 <figcaption>
                                 <center>
                                     <h3>Amritsar Trip</h3>

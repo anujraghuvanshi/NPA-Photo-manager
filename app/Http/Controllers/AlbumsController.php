@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Album;
+use App\Photo;
 use App\Repositories\AlbumRepository;
 
 class AlbumsController extends Controller
@@ -42,7 +43,19 @@ class AlbumsController extends Controller
     }
 
     
-    public function addImageToAllUserAlbums() {
-        dd('running');
+    public function shareToUsers($id) {
+        $pic = Photo::findOrFail($id);
+
+        $albums = Album::where('shared_by_admin',1)->pluck('id');
+        foreach ($albums as $key => $value ) {
+            $path = 'public/photos/'.$value.'/'.$pic->photo;
+            $photo = new Photo;
+            $photo->album_id = $value;
+            $photo->title = $pic->title;
+            $photo->description = $pic->description;
+            $photo->size = $pic->size;
+            $photo->photo = $path;
+            $photo->save();
+        }
     }
 }

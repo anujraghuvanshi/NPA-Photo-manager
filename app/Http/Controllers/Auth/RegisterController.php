@@ -29,7 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+    protected $redirectTo = '/albums';
 
     /**
      * Create a new controller instance.
@@ -72,6 +72,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'role' =>  empty($data['role']) ? 'user' : $data['role'],
         ]);
+
         $this->repository->createSharedByAdminAlbum($user);
         return $user;
     }
