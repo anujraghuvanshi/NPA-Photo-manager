@@ -2,99 +2,102 @@
     <div class="row margin-vert-30">
         <div class="col-md-12">
             <h2 class="text-center">Welcome to APA Photo Manager</h2><br>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                lobortis nisl ut aliquip ex ea commodo consequat.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-                    augue duis dolore te feugait nulla facilisi. Cras non sem sem, at eleifend mi.               a risus.
-                </p>
-            </div>
+            <p class="text-center">APA PHOTO MANAGER IS A PHOTO STORAGE. USER CREATE OWN ALBUMS OR
+                STORE PHOTOS IN IT. THERE ARE ALSO AVAILABLE ALBUM WHICH CONTAIN
+                PHOTOS SHARED BY ADMIN.
+                THERE IS ALSO AVAILABLE THE OPTION SHARE TO FACEBOOK. USER CAN
+                SHARE HIS PHOTO TO FACEBOOK DIRECTLY FROM ALBUM. FOR CREATING ALBUMS
+                IN APA PHOTO MANAGER USER HAVE TO LOGIN OR SIGN UP.
+            </p>
         </div>
     </div>
-    <div class="container background-gray-lighter">
-        <div class="row padding-vert-20">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-10">
-                <ul class="portfolio-group">
-                    <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                        <a href="#">
-                            <figure class="animate fadeInLeft">
-                                <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image1.jpg') }}">
-                                <figcaption>
+</div>
+<div class="container background-gray-lighter">
+    <div class="row padding-vert-20">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
+            <ul class="portfolio-group">
+                <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
+                    <a href="#">
+                        <figure class="animate fadeInLeft">
+                            <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image1.jpg') }}">
+                            <figcaption class="figcaption">
                                 <center>
-                                    <h3>Amritsar Trip</h3>
+                                    <h3>Night Studies</h3>
+                                <span>Stored memories you collected during your night studies.</span>
                                 </center>
-                                    <span>Go To Amritsar With Office Staff.</span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                        <a href="#">
-                            <figure class="animate fadeInRight">
-                                <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image2.jpg') }}">
-                                <figcaption>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
+                    <a href="#">
+                        <figure class="animate fadeInRight">
+                            <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image2.jpg') }}">
+                            <figcaption class="figcaption">
                                 <center>
-                                    <h3>Movie Time</h3>
+                                    <h3>Day Studies</h3>
+                                <span> Stored memories you collected during your Day studies..</span>
                                 </center>
-                                    <span>Go To Watching Movie With Three Bestee.</span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                        <a href="#">
-                            <figure class="animate fadeInLeft">
-                                <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image3.jpg') }}">
-                                <figcaption>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
+                    <a href="#">
+                        <figure class="animate fadeInLeft">
+                            <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image3.jpg') }}">
+                            <figcaption class="figcaption">
                                 <center>
-                                    <h3>Sport Meet</h3>
+                                    <h3>Raat di Gedee</h3>
+                                <span> Here Are my Gedee images.</span>
                                 </center>
-                                    <span>Go To Sport Meet in University.</span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                        <a href="#">
-                            <figure class="animate fadeInRight">
-                                <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image4.jpg') }}">
-                                <figcaption>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
+                    <a href="#">
+                        <figure class="animate fadeInRight">
+                            <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image4.jpg') }}">
+                            <figcaption class="figcaption">
                                 <center>
-                                    <h3>Birthday Celebration</h3>
+                                    <h3>i Collections</h3>
+                                <span>Images from laptop/Ipad shoppee.</span>
                                 </center>
-                                    <span>Celebrating Friend's Birthday.</span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                        <a href="#">
-                            <figure class="animate fadeInLeft">
-                                <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image5.jpg') }}">
-                                <figcaption>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
+                    <a href="#">
+                        <figure class="animate fadeInLeft">
+                            <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image5.jpg') }}">
+                            <figcaption class="figcaption">
                                 <center>
-                                    <h3>Nakodar Trip</h3>
+                                    <h3>Day route</h3>
+                                <span>My journeys during days</span>
                                 </center>
-                                    <span>Fully Enjoy With Besties</span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                        <a href="#">
-                            <figure class="animate fadeInRight">
-                                <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image6.jpg') }}">
-                                <figcaption>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
+                    <a href="#">
+                        <figure class="animate fadeInRight">
+                            <img alt="image" class="thumbnail-image" src="{{ asset('img/frontpage/image6.jpg') }}">
+                            <figcaption class="figcaption">
                                 <center>
-                                    <h3>Amritsar Trip</h3>
+                                    <h3>My Olde Phones</h3>
+                                <span>Here I have stored my old phones</span>
                                 </center>
-                                    <span>Unforgettable Memory</span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
+</div>
 </div>

@@ -41,8 +41,8 @@
 					</li>
 					@endforeach
 					<li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-						<a href="{{url('photos/create')}}/{{ $album->id }}">
-							<img alt="add-album" src="{{ asset('img/social_icons/add.png') }}" height="50" width="50" margin="20">
+						<a href="{{url('photos/create')}}/{{ $album->id }}" class="portfolio-add-image">
+							<img alt="add-album" src="{{ asset('img/social_icons/add.png') }}" height="100" width="100">
 						</a>
 					</li>
 				</ul>
