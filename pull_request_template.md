@@ -9,12 +9,10 @@
 ## Functionalities
 
 - [ ] Added abc Feature
-- [ ] Fixed xyz Bug
 - [ ] ...
 
 ## Issue Fixes
 
-- [ ] Added abc Feature
 - [ ] Fixed xyz Bug
 - [ ] ...
 
