@@ -6,7 +6,13 @@
 
  - [JT-X](https://jobprogress.atlassian.net/browse/JT-0001)
 
-## Breakdown / Changes / Functionality
+## Functionalities
+
+- [ ] Added abc Feature
+- [ ] Fixed xyz Bug
+- [ ] ...
+
+## Issue Fixes
 
 - [ ] Added abc Feature
 - [ ] Fixed xyz Bug
