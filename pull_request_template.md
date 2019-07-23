@@ -4,20 +4,20 @@
 
 ## Tickets
 
- - [JT-X](https://jobprogress.atlassian.net/browse/JT-104)
+ - [JT-X](https://jobprogress.atlassian.net/browse/JT-0001)
 
 ## Breakdown / Changes / Functionality
 
-- [ ] Adds new feature
-- [ ] Fixed old bugs
+- [ ] Added abc Feature
+- [ ] Fixed xyz Bug
 - [ ] ...
 
 ## Checklist
 
-- [ ] I have run this case.
+- [] I have checked in abc page & xyz page.
 
 <!--
-## Screenshot
+## Screenshot if any.
 
 ![]()
 -->
