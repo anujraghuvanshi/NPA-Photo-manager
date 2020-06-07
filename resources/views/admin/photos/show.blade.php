@@ -14,7 +14,7 @@
 			<div class="row">
 				<div class="col-md-5">
 					<figure>
-						<a href="{{asset('storage/photos')}}/{{ $photo->album_id }}/{{ $photo->photo }}" target="_blank">
+						<a href="{{asset('storage/photos')}}/{{ $photo->album_id }}/{{ $photo->photo }}" data-lightbox="image-1" data-title={{($photo->description) || "No Description" }}>
 							<img class="img-responsive thumbnail-image" alt="{{ $photo->title }}" src="{{asset('storage/photos')}}/{{ $photo->album_id }}/{{ $photo->photo }}" height="300" width="500">
 						</a>
 					</figure>
