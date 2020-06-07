@@ -33,8 +33,8 @@
 					{!! Form::open(['route' => ['photos.delete', $photo->id], 'method' => 'DELETE']) !!}
 
 					{{ Form::hidden('_method', 'delete') }}
+					<a href="{{ URL::previous() }}" class="btn btn-info">< Back to Gallery</a>
 					{{ Form::submit('Delete Photo', ['class' => 'btn btn-danger']) }}
-					<a href="{{ URL::previous() }}" class="btn btn-info">Go To Photos</a>
 					{!! Form::close() !!}					
 
 				</div>
