@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
     <head>
         <title>APA Photo Manager</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -16,10 +16,30 @@
         <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=PT+Sans" type="text/css" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
+
+        <meta property="og:url"           content="{{ env('APP_URL') }}/infographic_share" />
+        <meta property="og:type"          content="apa" />
+        <meta property="og:title"         content="apa" />
+        <meta property="og:description"   content="APA Photo Manager" />
+        <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+
     </head>
     <body>
     <div id="body-bg">
-    	@yield('content')
+        @include('admin.partials.social-links')
+
+        <div id="pre-header" class="container" style="height:20px"></div>
+
+        @include('admin.partials.header')
+        @include('admin.partials.nav-bar')
+
+        <div id="post_header" class="container" style="height:10px"></div>
+        <div id="content-top-border" class="container"></div>
+
+        @yield('content')
+        
+        <div id="content-bottom-border" class="container"></div>
+
     </div>
     <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}" type="text/javascript"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}" type="text/javascript"></script>

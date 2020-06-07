@@ -16,9 +16,10 @@ class CreateAlbumsTable extends Migration
         Schema::create('albums', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->integer('user_id');
             $table->string('cover_image');
+            $table->boolean('shared_by_admin')->default(0);
             $table->timestamps();
         });
     }
