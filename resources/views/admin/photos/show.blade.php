@@ -14,7 +14,9 @@
 			<div class="row">
 				<div class="col-md-5">
 					<figure>
-						<img class="img-responsive thumbnail-image" alt="{{ $photo->title }}" src="{{asset('storage/photos')}}/{{ $photo->album_id }}/{{ $photo->photo }}" height="300" width="500">
+						<a href="{{asset('storage/photos')}}/{{ $photo->album_id }}/{{ $photo->photo }}" target="_blank">
+							<img class="img-responsive thumbnail-image" alt="{{ $photo->title }}" src="{{asset('storage/photos')}}/{{ $photo->album_id }}/{{ $photo->photo }}" height="300" width="500">
+						</a>
 					</figure>
 				</div>
 				<div class="col-md-5">
