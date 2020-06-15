@@ -9,9 +9,9 @@
 .position-absolute {
 	position: absolute;
 }
-.portfolio-item{
+/* .portfolio-item{
 	width: 350px;
-}
+} */
 .figcaption{
 	height: 100px !important;
 }
