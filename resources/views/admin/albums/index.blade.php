@@ -45,7 +45,7 @@
 			<div class="col-md-10">
 				<div class="background-gray-lighter">
 					<center>
-						<h1>Welcome To Our APA Photo-Manager</h1>
+						<h1>Welcome To Our NPA Photo-Manager</h1>
 						<h3>Here You Can create your albums or photos</h3>
 						<p><i>We make sure that it will be private</i></p>
 						<a href="{{route('albums.create')}}" class="btn btn-primary">Create Album</a>

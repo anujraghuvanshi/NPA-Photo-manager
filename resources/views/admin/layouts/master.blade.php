@@ -1,7 +1,7 @@
 <html lang="en">
 <!DOCTYPE html>
     <head>
-        <title>APA Photo Manager</title>
+        <title>NPA Photo Manager</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="description" content="">
         <meta name="author" content="">
@@ -19,9 +19,9 @@
         <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
 
         <meta property="og:url"           content="{{ env('APP_URL') }}/infographic_share" />
-        <meta property="og:type"          content="apa" />
-        <meta property="og:title"         content="apa" />
-        <meta property="og:description"   content="APA Photo Manager" />
+        <meta property="og:type"          content="npa" />
+        <meta property="og:title"         content="npa" />
+        <meta property="og:description"   content="NPA Photo Manager" />
         <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
 
     </head>

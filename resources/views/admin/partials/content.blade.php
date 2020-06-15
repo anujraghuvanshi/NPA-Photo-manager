@@ -1,13 +1,10 @@
 <div class="container background-white">
     <div class="row margin-vert-30">
         <div class="col-md-12">
-            <h2 class="text-center">Welcome to APA Photo Manager</h2><br>
-            <p class="text-center">APA PHOTO MANAGER IS A PHOTO STORAGE. USER CREATE OWN ALBUMS OR
-                STORE PHOTOS IN IT. THERE ARE ALSO AVAILABLE ALBUM WHICH CONTAIN
-                PHOTOS SHARED BY ADMIN.
-                THERE IS ALSO AVAILABLE THE OPTION SHARE TO FACEBOOK. USER CAN
-                SHARE HIS PHOTO TO FACEBOOK DIRECTLY FROM ALBUM. FOR CREATING ALBUMS
-                IN APA PHOTO MANAGER USER HAVE TO LOGIN OR SIGN UP.
+            <h2 class="text-center">Welcome to NPA Photo Manager</h2><br>
+            <p class="text-center">APA PHOTO MANAGER IS A PHOTO STORAGE WEB APP. USER CAN CREATE OWN ALBUMS AND STORE PHOTOS IN IT. THERE ARE ALSO AVAILABLE ALBUM WHICH CONTAIN
+                PHOTOS SHARED BY ADMIN. THERE IS ALSO AVAILABLE OPTION SHARE TO FACEBOOK. USER CAN SHARE HIS PHOTO TO FACEBOOK DIRECTLY FROM ALBUM. FOR CREATING ALBUMS
+                IN APA PHOTO MANAGER USER HAVE TO LOGIN AFTER SIGNING UP.
             </p>
         </div>
     </div>
