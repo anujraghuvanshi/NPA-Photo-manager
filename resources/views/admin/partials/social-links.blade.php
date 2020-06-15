@@ -1,4 +1,4 @@
-<ul class="social-icons pull-right hidden-xs">
+{{-- <ul class="social-icons pull-right hidden-xs">
     <li class="social-rss">
         <a href="#" target="_blank" title="RSS"></a>
     </li>
@@ -11,4 +11,4 @@
     <li class="social-googleplus">
         <a href="#" target="_blank" title="GooglePlus"></a>
     </li>
-</ul>
+</ul> --}}

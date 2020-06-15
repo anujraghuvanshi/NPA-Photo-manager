@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="form-group row mb-0">
-                    {{ Form::submit('Submit',['class' => 'btn btn-primary']) }}
+                    {{ Form::submit('Create Album',['class' => 'btn btn-primary']) }}
                 </div>
                 {!! Form::close() !!}
             </div>

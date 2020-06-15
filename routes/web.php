@@ -23,6 +23,7 @@ Route::group(['middleware' => ['auth']], function () {
 		Route::get('/create',['as' => 'albums.create', 'uses' => 'AlbumsController@create']);
 		Route::post('/store',['as' => 'albums.store', 'uses' => 'AlbumsController@store']);
 		Route::get('/show/{id}',['as' => 'albums.view', 'uses' => 'AlbumsController@show']);
+		Route::get('/share/{id}',['as' => 'album.share', 'uses' => 'AlbumsController@shareToUsers']);
 	});
 
 	Route::group(['prefix' => 'photos'], function(){

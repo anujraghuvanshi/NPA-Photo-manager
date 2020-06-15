@@ -54,4 +54,5 @@ class PhotosController extends Controller
             return redirect('/albums/show/'.$photo->album_id)->with('Success', 'Photo deleted');
         }
     }
+
 }
