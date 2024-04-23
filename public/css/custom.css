@@ -1,0 +1,23 @@
+.carousel-slider-btn {
+	margin-top: 5px !important;
+    position: absolute;
+}
+
+.thumbnail-image{
+	height: 270px;
+}
+.position-absolute {
+	position: absolute;
+}
+/* .portfolio-item{
+	width: 350px;
+} */
+.figcaption{
+	height: 100px !important;
+}
+.add-album{
+	margin: 120px 20px;
+}
+.portfolio-add-image img{
+	margin-top: 45%;
+}
